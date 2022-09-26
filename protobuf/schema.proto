@@ -1,0 +1,21 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option go_package = "github.com/a-h/idl/protobuf";
+
+enum PhoneType {
+  mobile = 0;
+  home = 1;
+  work = 2;
+}
+
+message PhoneNumber {
+  string number = 1;
+  PhoneType type = 2;
+}
+
+message Person {
+  string name = 1;
+  google.protobuf.Timestamp birthdate = 2;
+  string email = 3;
+  repeated string PhoneNumber = 4;
+}
