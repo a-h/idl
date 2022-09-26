@@ -32,6 +32,8 @@
 * Good performance.
   * Supports binary serialization
   * JSON overhead is low
+* Breaking change detection
+  * Can detect breaking changes between versions
 
 ## Candidates
 
